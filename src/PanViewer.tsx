@@ -89,6 +89,7 @@ export default class ReactPanZoom extends React.PureComponent<
   }
 
   public componentWillUnmount() {
+    console.log("wheel listener removed");
     document.removeEventListener('wheel', this.preventDefault, false);
   }
 

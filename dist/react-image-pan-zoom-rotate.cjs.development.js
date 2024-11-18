@@ -207,6 +207,7 @@ var ReactPanZoom = /*#__PURE__*/function (_React$PureComponent) {
   };
 
   _proto.componentWillUnmount = function componentWillUnmount() {
+    console.log("wheel listener removed");
     document.removeEventListener('wheel', this.preventDefault, false);
   } // tslint:disable-next-line: member-ordering
   ;
